@@ -1,0 +1,19 @@
+#!/bin/bash
+
+echo "welcome to my simple shell"
+
+while true
+do
+	# Display prompt amd read command from user read -p "$ " cmd
+
+	# Handle end of file condition
+	if [[ -z "$cmd" ]]
+	then
+		echo "Exiting shell..."
+		exit 0
+
+	fi
+
+	# Execute command
+	$cmd
+done
